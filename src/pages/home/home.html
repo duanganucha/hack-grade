@@ -1,17 +1,30 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="dark">
+    <ion-title>
+      <ion-icon name="key" only></ion-icon>Check</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <div>
+    <img src="http://d3adcc0j1hezoq.cloudfront.net/wp-content/uploads/2015/12/anonymous-ISIS-warning.jpg" alt="">
+  </div>
+  <br>
+  <ion-list>
+
+    <ion-list-header>
+      Input code
+    </ion-list-header>
+    <form (ngSubmit)="go()">
+   
+    <ion-item>
+        <ion-input type="text" [(ngModel)]="value.code" name="code"  placeholder="Here =>"></ion-input>
+      </ion-item>
+
+
+    <button ion-button block large color="dark" type="submit">
+      <ion-icon name="ios-key"></ion-icon> Go</button>
+    </form>
+
+  </ion-list>
 </ion-content>
