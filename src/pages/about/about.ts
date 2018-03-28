@@ -21,6 +21,8 @@ export class AboutPage {
     this.url ='https://my.dpu.ac.th/webdynpro/dispatcher/dpu.ac.th/dcslcm~graderep/GradeReportApp?USERNAME='+this.value.code; 
     
     const browser = this.iab.create(this.url,'_self',{location:'no'}); 
+    
+   // const browser = this.iab.create(this.url,'_blank',{location:'yes'}); 
 
   
   }
